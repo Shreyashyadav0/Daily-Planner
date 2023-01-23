@@ -1,5 +1,5 @@
 const Router = require("express").Router();
-const { createSchedule } = require("../controllers/scheduleControllers");
+const { createSchedule } = require("../controllers/scheduleController");
 
 const webPush = require("web-push");
 
