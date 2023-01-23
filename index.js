@@ -41,7 +41,7 @@ app.get("/", (_req, res) => {
 });
 app.use("/api/v1/schedule", scheduleRoutes);
 
-app.listen(PORT, () => {
+app.listen(Process.env.PORT,  async() => {
   console.log(`Server is running on port ${PORT}`);
   RedisClient.connect()
     .then(console.log("Connected to redis"))
